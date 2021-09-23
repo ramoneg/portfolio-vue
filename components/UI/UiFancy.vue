@@ -3,7 +3,7 @@
         <span v-if="$slots.default" class="italic px-4 text-transparent bg-clip-text bg-gradient-to-br from-primary-300 to-yellow-200">
             <slot />
         </span>
-        <div v-if="icon" :class="[!iconSmall ? 'text-9xl' : 'text-4xl', iconCenter && 'left-1/2 -translate-x-1/2']" class="icon absolute top-1/2 transform -translate-y-1/2 text-transparent bg-clip-text bg-primary-200 opacity-10">
+        <div v-if="icon" :class="[iconSize, iconCenter && 'left-1/2 -translate-x-1/2']" class="icon absolute top-1/2 transform -translate-y-1/2 text-transparent bg-clip-text bg-primary-200 opacity-10">
             {{ icon }}
         </div>
         <div v-if="overlay" class="overlay absolute top-0 left-0 h-full w-full bg-primary-500 opacity-20 filter blur-lg pointer-events-none" />
@@ -21,9 +21,9 @@ export default {
             type: String,
             default: null
         },
-        iconSmall: {
-            type: Boolean,
-            default: false
+        iconSize: {
+            type: String,
+            default: "text-7xl"
         },
         iconCenter: {
             type: Boolean,
