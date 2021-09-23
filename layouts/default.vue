@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary-950 text-gray-200 min-h-screen w-full flex justify-center">
+  <div class="bg-gradient-to-tr from-primary-950 to-gray-800 text-gray-200 min-h-screen w-full flex justify-center">
     <div class="max-w-6xl w-full min-h-full">
       <!-- <nav class="p-2 sm:p-8 lg:p-10 mb-2">
         <nuxt-link to="/">
