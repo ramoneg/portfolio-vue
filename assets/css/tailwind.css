@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.spacer {
+    @apply mb-4 md:mb-8 lg:mb-10;
+}
+
+.block-spacer {
+    @apply my-8 md:my-14 lg:my-16;
+}
