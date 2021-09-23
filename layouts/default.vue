@@ -8,6 +8,11 @@
       </nav> -->
       <div class="px-8 lg:px-12">
         <nuxt-child />
+        <div class="w-full text-center">
+          <small>© Ramon Egger Software</small>
+          <br>
+          <a href="https://github.com/ramoneg/portfolio-vue" target="_blank"><small>This portfolio is on Github</small></a>
+        </div>
       </div>
     </div>
   </div>
