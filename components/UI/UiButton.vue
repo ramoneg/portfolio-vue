@@ -3,7 +3,7 @@
       <div class="bg-transparent px-5 py-3 shadow cursor-pointer uppercase font-bold z-10 rounded" :class="style" v-if="$slots.default">
         <slot />
       </div>
-      <div class="absolute top-0 left-0 filter blur-xl opacity-60 w-full h-full" :class="overlay" style="z-index: -1;" />
+      <div v-if="showOverlay" class="absolute top-0 left-0 filter blur-xl opacity-60 w-full h-full" :class="overlay" style="z-index: -1;" />
   </button>
 </template>
 
@@ -13,6 +13,10 @@ export default {
     buttonStyle: {
       type: String,
       default: 'primary'
+    },
+    showOverlay: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
