@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="mb-8">
+        <div class="spacer flex overflow-x-scroll md:overflow-x-auto">
             <ui-button
                 v-for="category in categories"
                 :key="category"
@@ -14,8 +14,11 @@
         <div class="flex flex-wrap items-center">
             <div v-for="skill in skills"
                 :key="skill.name"
-                class="flex relative rounded-2xl shadow mr-8 mb-8 px-4 py-2 border bg-gray-900 border-gray-700 transition-opacity"
-                :class="{'opacity-25': (filter != 'all' && skill.category != filter)}">
+                class="flex relative rounded-2xl shadow mr-2 mb-2 md:mr-8 md:mb-8 px-4 py-2 border bg-gray-900 border-gray-700 transition-opacity"
+                :class="{
+                    'opacity-25': (filter != 'all' && skill.category != filter),
+                    'border-primary-300': skill.level >= 8
+                }">
                 <ui-h3>{{ skill.name }}</ui-h3><small class="absolute top-0 right-0" v-if="skill.level >= 8">⭐</small>
             </div>
         </div>
@@ -79,12 +82,17 @@ export default {
                     level: 7
                 },
                 {
-                    name: 'Music Production',
+                    name: 'Audio Production',
                     category: 'Fancy',
                     level: 8
                 },
                 {
                     name: 'Thaiboxing',
+                    category: 'Fancy',
+                    level: 7
+                },
+                {
+                    name: 'Video Editing',
                     category: 'Fancy',
                     level: 7
                 },
@@ -99,7 +107,7 @@ export default {
     methods: {
         setFilter(filter) {
             this.filter == filter
-                ? this.filter = null
+                ? this.filter = 'all'
                 : this.filter = filter
         }
     },
