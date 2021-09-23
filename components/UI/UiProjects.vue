@@ -26,8 +26,18 @@ export default {
                     level: 10
                 },
                 {
+                    name: 'Evolve (cms)',
+                    url: 'https://racerfish.com/de/web-development',
+                    level: 0
+                },
+                {
                     name: 'LBC Composites',
                     url: 'https://lbc-composites.com',
+                    level: 0
+                },
+                {
+                    name: 'StrawBlond',
+                    url: 'https://strawblond.com',
                     level: 0
                 },
                 {
@@ -38,11 +48,6 @@ export default {
                 {
                     name: 'Ladyplanet',
                     url: 'https://ladyplanet.ch',
-                    level: 0
-                },
-                {
-                    name: 'Evolve (cms)',
-                    url: 'https://racerfish.com/de/web-development',
                     level: 0
                 },
                 {
