@@ -7,6 +7,12 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      height: {
+        "screen-1/2": "50vh",
+        "screen-2/3": "66vh",
+        "screen-3/4": "75vh",
+        "screen-4/5": "80vh",
+      },
       fontFamily: {
         heading: ["Source Sans Pro"],
         sans: ["DM Sans", ...defaultTheme.fontFamily.sans]
