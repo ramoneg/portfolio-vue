@@ -15,6 +15,18 @@
 
 <script>
 export default {
-  transition: 'page'
+    transition: 'page',
+    head() {
+        return {
+            title: 'Ramon Egger | Full Stack Web Developer',
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Full Stack Web Developer from Switzerland.',
+                },
+            ],
+        }
+    },
 }
 </script>
