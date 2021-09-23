@@ -8,6 +8,10 @@
     @apply mb-4 md:mb-8 lg:mb-10;
 }
 
+.p-spacer {
+    @apply py-4 md:py-8 lg:py-10;
+}
+
 .block-spacer {
-    @apply my-8 md:my-14 lg:my-16;
+    @apply mb-24 md:mb-36 lg:mb-48;
 }
