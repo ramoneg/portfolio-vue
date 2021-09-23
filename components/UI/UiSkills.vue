@@ -1,7 +1,8 @@
 <template>
     <div>
-        <div class="spacer flex overflow-x-scroll md:overflow-x-auto">
+        <div class="spacer flex overflow-x-scroll md:overflow-x-visible">
             <ui-button
+                :showOverlay="false"
                 v-for="category in categories"
                 :key="category"
                 @click.native="setFilter(category)"
