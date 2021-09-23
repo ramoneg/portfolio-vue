@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center" :class="!small ? 'h-screen' : 'h-40'">
-        <div>
+    <div class="flex items-center" :class="!small ? 'h-screen-4/5' : 'h-screen-2/3'">
+        <div class="text-center md:text-left">
             <slot />
         </div>
     </div>
