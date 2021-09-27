@@ -20,7 +20,7 @@
                     'opacity-25': (filter != 'all' && skill.category != filter),
                     'border-primary-300': skill.level >= 8
                 }">
-                <ui-h3>{{ skill.name }}</ui-h3><small class="absolute top-0 right-0" v-if="skill.level >= 8">⭐</small>
+                <ui-h3>{{ skill.name }}</ui-h3><small class="absolute top-0 right-0 font-emoji" v-if="skill.level >= 8">⭐</small>
             </div>
         </div>
     </div>

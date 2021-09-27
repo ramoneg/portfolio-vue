@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         heading: ["Source Sans Pro"],
+        emoji: ["Emoji"],
         sans: ["DM Sans", ...defaultTheme.fontFamily.sans]
       },
       colors: {

@@ -9,7 +9,7 @@
             :class="{'cursor-not-allowed': !project.url, 'hover:bg-gray-700': project.url}"
             class="col-span-1 p-5 flex rounded-3xl bg-gray-800 transform transition-colors relative">
                 <ui-h3>{{ project.name }}</ui-h3><ui-badge class="ml-2" v-if="!project.url">Private</ui-badge>
-                <p class="absolute top-0 left-0" v-if="project.level >= 8">⭐</p>
+                <p class="absolute top-0 left-0 font-emoji" v-if="project.level >= 8">⭐</p>
             </a>
         </div>
     </div>
