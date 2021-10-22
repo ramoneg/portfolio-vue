@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="spacer flex overflow-x-scroll md:overflow-x-visible">
-            <ui-button
+            <UiButton
                 :showOverlay="false"
                 v-for="category in categories"
                 :key="category"
@@ -10,7 +10,7 @@
                 class="mr-4"
                 >
                 {{ category }}
-            </ui-button>
+            </UiButton>
         </div>
         <div class="flex flex-wrap items-center">
             <div v-for="skill in skills"
