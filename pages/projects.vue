@@ -1,11 +1,11 @@
 <template>
     <div>
-        <ui-hero small>
+        <UiHero small>
             <ui-h2>Projects</ui-h2>
-        </ui-hero>
-        <ui-section id="projects">
+        </UiHero>
+        <UiSection id="projects">
             <ui-projects />
-        </ui-section>
+        </UiSection>
     </div>
 </template>
 

@@ -17,19 +17,19 @@
     <div class="max-w-6xl w-full min-h-full">
       <div class="px-8 lg:px-12">
         <nuxt-child />
-        <ui-section id="about" class="flex flex-wrap justify-center">
+        <UiSection id="about" class="flex flex-wrap justify-center">
           <ui-h2 class="spacer text-center w-full"><ui-fancy overlay icon="🙋‍♂️" icon-size="text-7xl">Hi!</ui-fancy></ui-h2>
           <ui-panel>
             <ui-p class="spacer">I work as an Full Stack Web Developer. Meaning I develop front- and backend stuff for the web.</ui-p>
             <ui-p>I'm passionate about tackling something which excites and challenges me. This can be coding a project, restaurating a classic Mini or doing Muay Thai.</ui-p>
           </ui-panel>
-        </ui-section>
+        </UiSection>
 
-        <ui-section id="contact" class="flex flex-wrap justify-center">
+        <UiSection id="contact" class="flex flex-wrap justify-center">
             <ui-h3><ui-fancy overlay><a href="mailto:ramon@ramonegger.ch">Mail</a></ui-fancy></ui-h3>
             <ui-h3><ui-fancy overlay><a target="_blank" href="https://github.com/ramoneg">Github</a></ui-fancy></ui-h3>
             <ui-h3><ui-fancy overlay><a target="_blank" href="https://www.linkedin.com/in/ramon-egger-7509a4123">LinkedIn</a></ui-fancy></ui-h3>
-        </ui-section>
+        </UiSection>
         <div class="w-full text-center">
           <small>© Ramon Egger Software</small>
           <br>
