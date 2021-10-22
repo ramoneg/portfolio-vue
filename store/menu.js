@@ -8,10 +8,10 @@ export const state = () => ({
             name: 'Projects',
             url: '/projects',
         },
-        // {
-        //     name: 'Blog',
-        //     url: '/blog',
-        // },
+        {
+            name: 'Blog',
+            url: '/blog',
+        },
     ],
     isOpen: false
 })
