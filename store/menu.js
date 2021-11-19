@@ -5,12 +5,12 @@ export const state = () => ({
             url: '/',
         },
         {
-            name: 'Projects',
-            url: '/projects',
-        },
-        {
             name: 'Blog',
             url: '/blog',
+        },
+        {
+            name: 'Projects',
+            url: '/projects',
         },
     ],
     isOpen: false
