@@ -16,7 +16,7 @@ module.exports = {
       fontFamily: {
         heading: ["Source Sans Pro"],
         emoji: ["Emoji"],
-        sans: ["DM Sans", ...defaultTheme.fontFamily.sans]
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: { ...primary, 950: '#0a0000' }
