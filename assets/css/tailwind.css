@@ -39,6 +39,6 @@
     }
 
     blockquote p {
-        @apply font-medium mb-0;
+        @apply font-medium;
     }
 }
