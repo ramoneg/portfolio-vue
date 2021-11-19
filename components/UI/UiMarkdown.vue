@@ -70,7 +70,7 @@ export default {
     }
 
     img {
-        @apply inline-block max-h-96 rounded;
+        @apply object-contain w-2/5 md:w-auto max-h-96 inline-block rounded;
     }
 }
 </style>
