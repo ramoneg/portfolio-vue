@@ -1,9 +1,9 @@
 <template>
   <div>
     <UiHero>
-      <ui-h1 class="spacer">
+      <h1 class="spacer">
         I like to write <ui-fancy overlay icon="⚡" icon-size="text-9xl">#fancy</ui-fancy> code
-      </ui-h1>
+      </h1>
       <div>
         <nuxt-link to="/projects">
           <UiButton>Projects</UiButton>
@@ -11,7 +11,7 @@
       </div>
     </UiHero>
     <UiSection id="skills">
-      <ui-h2 class="spacer">Skills</ui-h2>
+      <h2 class="spacer">Skills</h2>
       <ui-skills />
     </UiSection>
   </div>

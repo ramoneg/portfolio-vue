@@ -1,7 +1,7 @@
 <template>
     <div>
         <UiHero small>
-            <ui-h1>Blog</ui-h1>
+            <h1>Blog</h1>
         </UiHero>
         <UiSection>
             <UiBlogPosts :posts="blogPosts" />

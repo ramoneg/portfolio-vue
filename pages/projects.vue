@@ -1,7 +1,7 @@
 <template>
     <div>
         <UiHero small>
-            <ui-h2>Projects</ui-h2>
+            <h2>Projects</h2>
         </UiHero>
         <UiSection id="projects">
             <ui-projects />

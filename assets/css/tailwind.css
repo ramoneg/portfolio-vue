@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .spacer {
     @apply mb-4 md:mb-8 lg:mb-10;
 }
@@ -14,4 +15,30 @@
 
 .block-spacer {
     @apply mb-24 md:mb-36 lg:mb-48;
+}
+
+@layer base {
+    h1 {
+        @apply text-5xl md:text-7xl font-heading font-black uppercase;
+    }
+    
+    h2 {
+        @apply text-5xl font-heading font-black uppercase text-gray-200;
+    }
+    
+    h3 {
+        @apply text-xl md:text-2xl font-heading font-black uppercase text-gray-300;
+    }
+    
+    p {
+        @apply text-lg md:text-xl font-extralight tracking-normal;
+    }
+
+    blockquote {
+        @apply rounded my-4 md:my-8 lg:my-16 border-l-4 border-primary-400 pl-8 p-8 bg-gradient-to-tr from-gray-900 to-gray-800;
+    }
+
+    blockquote p {
+        @apply font-medium mb-0;
+    }
 }

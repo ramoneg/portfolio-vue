@@ -1,9 +1,9 @@
 <template>
     <div>
         <UiHero small :image="post.fields.heroImage">
-            <ui-h1>{{ post.fields.title }}</ui-h1>
+            <h1>{{ post.fields.title }}</h1>
         </UiHero>
-        <UiMarkdown :text="post.fields.body" />
+        <UiMarkdown class="lg:w-4/5" :text="post.fields.body" />
     </div>
 </template>
 

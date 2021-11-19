@@ -16,19 +16,19 @@
     </nav>
     <div class="max-w-6xl w-full min-h-full">
       <div class="px-8 lg:px-12">
-        <nuxt-child />
+        <nuxt-child class="mb-16 md:mb-32 lg:mb-48" />
         <UiSection id="about" class="flex flex-wrap justify-center">
-          <ui-h2 class="spacer text-center w-full"><ui-fancy overlay icon="🙋‍♂️" icon-size="text-7xl">Hi!</ui-fancy></ui-h2>
+          <h2 class="spacer text-center w-full"><ui-fancy overlay icon="🙋‍♂️" icon-size="text-7xl">Hi!</ui-fancy></h2>
           <ui-panel>
-            <ui-p class="spacer">I work as an Full Stack Web Developer. Meaning I develop front- and backend stuff for the web.</ui-p>
-            <ui-p>I'm passionate about tackling something which excites and challenges me. This can be coding a project, restaurating a classic Mini or doing Muay Thai.</ui-p>
+            <p class="spacer">I work as an Full Stack Web Developer. Meaning I develop front- and backend stuff for the web.</p>
+            <p>I'm passionate about tackling something which excites and challenges me. This can be coding a project, restaurating a classic Mini or doing Muay Thai.</p>
           </ui-panel>
         </UiSection>
 
         <UiSection id="contact" class="flex flex-wrap justify-center">
-            <ui-h3><ui-fancy overlay><a href="mailto:ramon@ramonegger.ch">Mail</a></ui-fancy></ui-h3>
-            <ui-h3><ui-fancy overlay><a target="_blank" href="https://github.com/ramoneg">Github</a></ui-fancy></ui-h3>
-            <ui-h3><ui-fancy overlay><a target="_blank" href="https://www.linkedin.com/in/ramon-egger-7509a4123">LinkedIn</a></ui-fancy></ui-h3>
+            <h3><ui-fancy overlay><a href="mailto:ramon@ramonegger.ch">Mail</a></ui-fancy></h3>
+            <h3 class="mx-4"><ui-fancy overlay><a target="_blank" href="https://github.com/ramoneg">Github</a></ui-fancy></h3>
+            <h3><ui-fancy overlay><a target="_blank" href="https://www.linkedin.com/in/ramon-egger-7509a4123">LinkedIn</a></ui-fancy></h3>
         </UiSection>
         <div class="w-full text-center">
           <small>© Ramon Egger Software</small>

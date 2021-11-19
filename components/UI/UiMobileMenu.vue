@@ -13,9 +13,9 @@
                     <ui-panel class="text-center shadow-xl flex flex-col space-y-8 text-4xl font-heading uppercase">
                         <nuxt-link v-for="link in $store.state.menu.links" :key="link.url" @click.native="$store.dispatch('menu/toggleMenu')" :to="link.url">{{ link.name }}</nuxt-link>
                     </ui-panel>
-                    <ui-h2 class="mt-16 spacer cursor-pointer" @click.native="$store.dispatch('menu/toggleMenu')">
+                    <h2 class="mt-16 spacer cursor-pointer" @click.native="$store.dispatch('menu/toggleMenu')">
                         <ui-fancy overlay>Close</ui-fancy>
-                    </ui-h2>
+                    </h2>
                 </div>
             </div>
         </transition>

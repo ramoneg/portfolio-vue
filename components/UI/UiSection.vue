@@ -1,6 +1,6 @@
 <template>
   <section class="block-spacer text-center md:text-left">
-    <ui-h2 class="mb-2" v-if="title">{{ title }}</ui-h2>
+    <h2 class="mb-2" v-if="title">{{ title }}</h2>
     <slot />
   </section>
 </template>
