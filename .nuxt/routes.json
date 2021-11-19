@@ -1,0 +1,30 @@
+[
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/Users/ramon/Code/git/portfolio-vue/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_5271a943"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "/Users/ramon/Code/git/portfolio-vue/pages/projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_5f3e86d0"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "/Users/ramon/Code/git/portfolio-vue/pages/blog/_slug/index.vue",
+    "chunkName": "pages/blog/_slug/index",
+    "_name": "_54bb3384"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ramon/Code/git/portfolio-vue/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_d3b53cb8"
+  }
+]
