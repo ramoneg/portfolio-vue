@@ -3,6 +3,7 @@ const config = require('./.contentful.json');
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  ssr: false,
 
   tailwindcss: {
     configPath: "tailwind.config.js",
@@ -55,7 +56,7 @@ export default {
 
   googleFonts: {
     families: {
-      'DM+Sans': [400, 700, 800, 900],
+      'Montserrat': [200, 300, 400, 700, 800, 900],
       'Source+Sans+Pro': [900]
     }
   },
