@@ -45,15 +45,15 @@ export default {
     h2,
     h3,
     h4 {
-        @apply my-4 md:my-8;
+        @apply mb-8 md:mb-10;
     }
 
     h2:not(:first-child) {
-        @apply mt-12 md:mt-24 lg:mt-36 mb-4 md:mb-8;
+        @apply mt-12 md:mt-24 lg:mt-36;
     }
 
     p {
-        @apply mb-2 md:mb-4;
+        @apply mb-4 md:mb-8;
     }
 
     a {
@@ -63,6 +63,14 @@ export default {
             @apply absolute w-full h-1/2 bottom-0 left-0 -translate-y-1/2 bg-primary-200 opacity-20;
             content: '';
         }
+    }
+
+    blockquote p {
+        @apply mb-0;
+    }
+
+    img {
+        @apply inline-block max-h-96 rounded;
     }
 }
 </style>

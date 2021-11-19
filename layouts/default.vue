@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-tr from-primary-950 to-gray-800 text-gray-200 min-h-screen w-full flex justify-center relative" :class="{'max-h-screen overflow-hidden': $store.state.menu.isOpen}">
+  <div class="bg-gradient-to-tr from-primary-950 to-gray-800 text-gray-200 w-full flex justify-center relative" :class="{'overflow-hidden': $store.state.menu.isOpen}">
     <div class="fixed h-1 z-30 left-0 top-0 bg-gradient-to-r from-yellow-300 to-primary-300 transition-all duration-75" :style="{ width: `${$store.state.scroll.percent}%` }" />
     <nav class="z-20 w-full fixed left-0 top-0 flex justify-center transition-colors" :class="{'backdrop-filter backdrop-blur shadow-lg bg-opacity-30 bg-gray-700': !top}">
       <div class="max-w-6xl w-full">
@@ -53,6 +53,9 @@ export default {
                     content: 'Full Stack Web Developer from Switzerland.',
                 },
             ],
+            bodyAttrs: {
+                class: this.$store.state.menu.isOpen ? 'overflow-hidden' : '',
+            },
         }
     },
 
@@ -65,9 +68,9 @@ export default {
     },
 
     computed: {
-      top () {
-        return this.$store.state.scroll.percent == 0
-      }
+        top() {
+            return this.$store.state.scroll.percent == 0
+        },
     },
 
     methods: {
