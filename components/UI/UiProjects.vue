@@ -2,8 +2,8 @@
     <div>
         <div class="w-full grid-cols-1 md:grid-cols-2 grid gap-4">
             <a
-            v-for="project in projects"
-            :key="project"
+            v-for="(project, index) in projects"
+            :key="index"
             target="_blank"
             :href="project.url"
             :class="{'cursor-not-allowed': !project.url, 'hover:bg-gray-700': project.url}"
