@@ -10,21 +10,21 @@
 </template>
 
 <script>
-import { createClient } from '~/plugins/contentful.js';
-const client = createClient();
+import { createClient } from '~/plugins/contentful.js'
+const client = createClient()
 
 export default {
     async asyncData() {
         let blogPosts = await client.getEntries({
-          content_type: 'blogPost',
-          order: '-sys.createdAt',
+            content_type: 'blogPost',
+            order: '-sys.createdAt',
         })
 
         blogPosts = blogPosts.items
 
         return {
-            blogPosts
+            blogPosts,
         }
-    }
+    },
 }
 </script>
