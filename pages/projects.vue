@@ -1,7 +1,7 @@
 <template>
     <div>
         <UiHero small>
-            <h2>Projects</h2>
+            <h1>Projects</h1>
         </UiHero>
         <UiSection id="projects">
             <ui-projects :elementClasses="['border-b border-primary-300']" :projects="projects.filter(p => p.fields.level && p.fields.level >= 8)" />
