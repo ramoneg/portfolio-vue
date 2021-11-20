@@ -49,7 +49,18 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/sitemap'
+  ],
+
+  // sitemap configuration
+  sitemap: {
+    hostname: 'https://ramonegger.ch',
+    gzip: true,
+    exclude: [
+      //
+    ],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
