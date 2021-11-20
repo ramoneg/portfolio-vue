@@ -11,7 +11,7 @@
             </span>
         </section>
         <UiHero small :image="post.fields.heroImage">
-            <h1 itemprop="title">{{ post.fields.title }}</h1>
+            <h1 itemprop="headline">{{ post.fields.title }}</h1>
         </UiHero>
         <UiMarkdown itemprop="text" class="lg:w-4/5" :text="post.fields.body" />
         <small class="font-mono text-primary-100">Published <span itemprop="datePublished">{{ formatDate(post.sys.createdAt) }}</span></small>
