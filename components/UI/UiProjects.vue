@@ -5,11 +5,17 @@
             v-for="(project, index) in projects"
             :key="index"
             target="_blank"
-            :href="project.url"
-            :class="{'cursor-not-allowed': !project.url, 'hover:bg-gray-700': project.url}"
-            class="col-span-1 p-5 flex rounded-3xl bg-gray-800 transform transition-colors relative">
-                <h3>{{ project.name }}</h3><ui-badge class="ml-2" v-if="!project.url">Private</ui-badge>
-                <p class="absolute top-0 left-0 font-emoji" v-if="project.level >= 8">⭐</p>
+            :href="project.fields.url"
+            class="col-span-1 rounded-xl bg-gray-800 transform transition-colors duration-75 relative p-5 flex items-center"
+            :class="[elementClasses, {
+                'cursor-not-allowed': !project.fields.url, 
+                'hover:bg-gray-700': project.fields.url
+            }]">
+                <ui-badge class="absolute top-5 right-5" v-if="!project.fields.url">Private</ui-badge>
+                <div class="text-left">
+                    <span class="text-gray-400 font-mono" v-if="project.fields.type">{{ project.fields.type }}</span>
+                    <h3>{{ project.fields.title }}</h3>
+                </div>
             </a>
         </div>
     </div>
@@ -17,66 +23,6 @@
 
 <script>
 export default {
-    data () {
-        return {
-            projects: [
-                {
-                    name: 'Mini Restauration',
-                    url: 'https://instagram.com/jarvisthemini',
-                    level: 10
-                },
-                {
-                    name: 'Evolve (cms)',
-                    url: 'https://racerfish.com/de/web-development',
-                    level: 0
-                },
-                {
-                    name: 'LBC Composites',
-                    url: 'https://lbc-composites.com',
-                    level: 0
-                },
-                {
-                    name: 'StrawBlond',
-                    url: 'https://strawblond.com',
-                    level: 0
-                },
-                {
-                    name: 'Roughneck Marine',
-                    url: 'https://roughneck-marine.com',
-                    level: 0
-                },
-                {
-                    name: 'Ladyplanet',
-                    url: 'https://ladyplanet.ch',
-                    level: 0
-                },
-                {
-                    name: 'SocialGate (app)',
-                    url: null,
-                    level: 0
-
-                },
-                {
-                    name: 'Apropos.jobs (app)',
-                    url: null,
-                    level: 0
-
-                },
-                {
-                    name: 'Nitrous (cms)',
-                    url: 'https://racerfish.com/de/web-development',
-                    level: 0
-                },
-                // 'LBC Composites',
-                // 'Roughneck Marine',
-                // 'Ladyplanet',
-                // 'SocialGate',
-                // 'Apropos.jobs',
-                // 'Arfina Capital',
-                // 'Bixe.ch',
-                // 'Harley Davidson',
-            ]
-        }
-    }
+    props: ['projects', 'elementClasses']
 }
 </script>
