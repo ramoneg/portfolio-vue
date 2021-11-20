@@ -1,5 +1,5 @@
 <template>
-    <div itemtype="https://schema.org/Blog">
+    <div itemscope itemtype="https://schema.org/Blog">
         <section id="information" class="hidden">
             <span itemprop="author">Ramon Egger</span>
             <img itemprop="image" :src="post.fields.heroImage">
