@@ -14,7 +14,7 @@
             <h1 itemprop="headline">{{ post.fields.title }}</h1>
         </UiHero>
         <UiMarkdown itemprop="text" class="lg:w-4/5" :text="post.fields.body" />
-        <small class="font-mono text-primary-100">Published <span itemprop="datePublished">{{ formatDate(post.sys.createdAt) }}</span></small>
+        <small class="font-mono text-gray-400">Published <span itemprop="datePublished">{{ formatDate(post.sys.createdAt) }}</span></small>
     </div>
 </template>
 
