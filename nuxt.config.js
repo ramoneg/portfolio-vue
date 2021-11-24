@@ -3,7 +3,6 @@ const config = require('./.contentful.json');
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  ssr: false,
 
   tailwindcss: {
     configPath: "tailwind.config.js",
