@@ -12,9 +12,9 @@ jobs:
         with:
           node-version: 16
       - name: Installing node dependencies
-      - run: npm ci
+        run: npm ci
       - name: Building for production
-      - run: npm run generate
+        run: npm run generate
       - name: Uploading to server
         uses: burnett01/rsync-deployments@5.1
         with:
