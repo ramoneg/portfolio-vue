@@ -11,6 +11,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+      - name: Setting up credentials
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: ".contentful.json"
+          json: ${{ secrets.CONTENTFUL_CREDENTIALS }}
       - name: Installing node dependencies
         run: npm ci
       - name: Building for production
