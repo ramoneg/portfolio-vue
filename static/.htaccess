@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.ramonegger\.ch$ [NC]
+  RewriteRule ^(.*)$ https://ramonegger.ch/$1 [R=301,L]
+</IfModule>
