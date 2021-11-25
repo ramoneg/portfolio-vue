@@ -1,4 +1,4 @@
-name: Webhost deployment
+name: Webhost deployment on publish
 on:
   push:
     branches:

@@ -1,0 +1,31 @@
+name: Webhost deployment on push
+on:
+	repository_dispatch:
+    	types: [publish-event]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Setting up credentials
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: ".contentful.json"
+          json: ${{ secrets.CONTENTFUL_CREDENTIALS }}
+      - name: Installing node dependencies
+        run: npm ci
+      - name: Building for production
+        run: npm run generate
+      - name: Uploading to server
+        uses: burnett01/rsync-deployments@5.1
+        with:
+          switches: -avzr --delete
+          path: dist/
+          remote_path: ${{ secrets.SSH_DESTINATION }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USERNAME }}
+          remote_key: ${{ secrets.SSH_KEY }}
+          remote_key_pass: ${{ secrets.SSH_KEY_PASS }}
