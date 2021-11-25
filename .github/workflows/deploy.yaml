@@ -1,7 +1,10 @@
-name: Webhost deployment on push
+name: Webhost deployment on publish
 on:
   repository_dispatch:
     types: [publish-event]
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,15 +13,27 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+
       - name: Setting up credentials
         uses: jsdaniell/create-json@1.1.2
         with:
           name: ".contentful.json"
           json: ${{ secrets.CONTENTFUL_CREDENTIALS }}
+
+      - name: Setting up cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Installing node dependencies
         run: npm ci
+
       - name: Building for production
         run: npm run generate
+
       - name: Uploading to server
         uses: burnett01/rsync-deployments@5.1
         with:
