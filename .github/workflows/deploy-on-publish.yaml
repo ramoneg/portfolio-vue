@@ -1,7 +1,7 @@
 name: Webhost deployment on push
 on:
-	repository_dispatch:
-    	types: [publish-event]
+  repository_dispatch:
+    types: [publish-event]
 jobs:
   build:
     runs-on: ubuntu-latest
