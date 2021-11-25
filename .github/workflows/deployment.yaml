@@ -16,6 +16,10 @@ jobs:
         with:
           name: ".contentful.json"
           json: ${{ secrets.CONTENTFUL_CREDENTIALS }}
+      - uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: dist/.htaccess
+          FILE_DATA: ${{ secrets.HTACCESS }}
       - name: Installing node dependencies
         run: npm ci
       - name: Building for production
