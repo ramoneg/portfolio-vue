@@ -1,4 +1,4 @@
-name: Webhost deployment on publish
+name: Build and deploy to webhost
 on:
   repository_dispatch:
     types: [publish-event]
