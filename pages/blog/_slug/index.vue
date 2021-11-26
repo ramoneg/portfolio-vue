@@ -14,7 +14,7 @@
             <h1 itemprop="headline">{{ post.fields.title }}</h1>
         </UiHero>
         <UiMarkdown itemprop="text" class="lg:w-4/5" :text="post.fields.body" />
-        <small class="font-mono text-gray-400">Published <span itemprop="datePublished">{{ formatDate(post.sys.createdAt) }}</span></small>
+        <small class="font-mono text-gray-400">Published <span itemprop="datePublished">{{ $formatDate(post.fields.publishDate) }}</span></small>
     </div>
 </template>
 
@@ -23,12 +23,6 @@ import { createClient } from '~/plugins/contentful.js';
 const client = createClient();
 
 export default {
-    methods: {
-        formatDate(value) {
-            let date = new Date(value)
-            return `${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`
-        }
-    },
     async asyncData({ params }) {
         let post = await client.getEntries({
             content_type: 'blogPost',

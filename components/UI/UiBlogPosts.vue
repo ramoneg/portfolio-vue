@@ -13,7 +13,7 @@
                             </UiButton>
                         </nuxt-link>
                         <span class="font-mono">
-                            {{ formatDate(post.sys.createdAt) }}
+                            {{ $formatDate(post.fields.publishDate) }}
                         </span>
                     </div>
                 </template>
@@ -24,12 +24,6 @@
 
 <script>
 export default {
-    props: ['posts'],
-    methods: {
-        formatDate(value) {
-            let date = new Date(value)
-            return `${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`
-        }
-    }
+    props: ['posts']
 }
 </script>
