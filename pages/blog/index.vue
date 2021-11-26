@@ -17,7 +17,7 @@ export default {
     async asyncData() {
         let blogPosts = await client.getEntries({
             content_type: 'blogPost',
-            order: '-sys.createdAt',
+            order: 'fields.publishDate',
         })
 
         blogPosts = blogPosts.items
