@@ -54,7 +54,7 @@ export default {
 
         &:after {
             content: "";
-            @apply absolute w-10 h-1 bg-gradient-to-tr from-primary-200 to-primary-400 rounded -bottom-1 left-0;
+            @apply hidden md:block absolute w-10 h-1 bg-gradient-to-tr from-primary-200 to-primary-400 rounded -bottom-1 left-0;
         }
 
         &:not(:first-child) {
