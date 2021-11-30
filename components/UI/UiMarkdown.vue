@@ -48,8 +48,18 @@ export default {
         @apply mb-8 md:mb-10;
     }
 
-    h2:not(:first-child) {
-        @apply mt-12 md:mt-24 lg:mt-36;
+    h2 {
+
+        @apply relative;
+
+        &:after {
+            content: "";
+            @apply absolute w-10 h-1 bg-gradient-to-tr from-primary-200 to-primary-400 rounded -bottom-1 left-0;
+        }
+
+        &:not(:first-child) {
+            @apply mt-12 md:mt-24 lg:mt-36;
+        }
     }
 
     p {
@@ -62,6 +72,14 @@ export default {
         &:after {
             @apply absolute w-full h-1/2 bottom-0 left-0 -translate-y-1/2 bg-primary-200 opacity-20;
             content: '';
+        }
+    }
+
+    ol {
+        @apply ml-5 mb-4 md:mb-8;
+
+        li {
+            @apply pl-4 list-decimal;
         }
     }
 
