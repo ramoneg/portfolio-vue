@@ -4,9 +4,9 @@
             <h1>Projects</h1>
         </UiHero>
         <UiSection id="projects">
-            <ui-projects :elementClasses="['border-b border-primary-300']" :projects="projects.filter(p => p.fields.level && p.fields.level >= 8)" />
+            <ui-projects :elementClasses="['border border-primary-300']" :projects="projects.filter(p => p.fields.level && p.fields.level >= 8)" />
             <hr class="border-gray-700 my-8 md:my-12 lg:my-16">
-            <ui-projects :elementClasses="['border-b border-gray-400']" :projects="projects.filter(p => !p.fields.level || p.fields.level < 8)" />
+            <ui-projects :elementClasses="['border border-gray-600']" :projects="projects.filter(p => !p.fields.level || p.fields.level < 8)" />
         </UiSection>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded bg-gray-800 relative overflow-hidden shadow-xl">
+  <div class="rounded bg-gray-800 relative overflow-hidden shadow-xl border border-gray-600">
         <div class="absolute w-full h-full pointer-events-none bg-gradient-to-tr via-transparent to-white z-10 opacity-30" />
         <UiImage class="h-48 mt-4 w-full object-contain" v-if="image" :image="image" />
         <div class="p-4 flex flex-col space-y-4">
