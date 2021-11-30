@@ -19,11 +19,11 @@
 
 @layer base {
     h1 {
-        @apply text-5xl md:text-7xl font-heading font-black uppercase;
+        @apply text-4xl md:text-5xl lg:text-7xl font-heading font-black uppercase;
     }
     
     h2 {
-        @apply text-5xl font-heading font-black uppercase text-gray-200;
+        @apply text-3xl md:text-4xl font-heading font-black uppercase text-gray-200;
     }
     
     h3 {
