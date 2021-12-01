@@ -47,6 +47,8 @@ export default {
     "@nuxtjs/tailwindcss",
     // https://google-fonts.nuxtjs.org/setup
     '@nuxtjs/google-fonts',
+    // https://timbenniks.dev/writings/easy-dynamic-routes-in-your-nuxt-sitemap
+    '@/modules/dynamicSitemapRoutes'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
