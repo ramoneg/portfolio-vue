@@ -23,6 +23,18 @@ import { createClient } from '~/plugins/contentful.js';
 const client = createClient();
 
 export default {
+    head() {
+        return {
+            title: `Ramon Egger | ${this.post.fields.title}`,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.post.fields.description,
+                },
+            ]
+        }
+    },
     async asyncData({ params }) {
         let post = await client.getEntries({
             content_type: 'blogPost',
