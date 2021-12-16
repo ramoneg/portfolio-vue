@@ -18,7 +18,7 @@ const client = createClient()
 export default {
     head() {
         return {
-            title: 'Ramon Egger | Projects',
+            title: 'Projects and Portfolio',
         }
     },
     async asyncData() {
