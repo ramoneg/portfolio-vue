@@ -20,7 +20,7 @@
         <UiSection id="about" class="flex flex-wrap justify-center">
           <h2 class="spacer text-center w-full"><ui-fancy overlay icon="🙋‍♂️" icon-size="text-7xl">Hi!</ui-fancy></h2>
           <ui-panel class="md:w-2/3">
-            <p class="spacer">I am working as an Full Stack Web Developer. Meaning I develop front- and backend stuff for the web.</p>
+            <p class="spacer">I am a Lead Developer and Teamleader from Zurich, Switzerland.</p>
             <p>I'm passionate about tackling something which excites and challenges me. This can be coding a project, restaurating a classic Mini or doing Muay Thai.</p>
           </ui-panel>
         </UiSection>
